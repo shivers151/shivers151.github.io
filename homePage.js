@@ -1,5 +1,5 @@
 let user = JSON.parse(window.localStorage.getItem("userAuth"));
-    
+console.log(user)    
 const container = document.getElementById('greetingContainer');
     
 container.innerHTML = ''; // Clear existing content
@@ -32,6 +32,19 @@ function fetchWorkouts() {
 
 fetchWorkouts(); // Call the function to fetch workouts
 
+function addSpecialLink(email) {
+    const container = document.getElementById('specialLinkContainer');
+
+    if (email === "williamneapolitan79@gmail.com" || email === "anthonyjshivers@gmail.com") {
+        const link = document.createElement('a');
+        link.href = '/addSession.html'; // Set this to your desired URL
+        link.textContent = 'Add workout'; // Set the link text
+        link.classList.add('vip-link');
+        container.appendChild(link);
+    }
+}
+
+addSpecialLink(user.email);
 /*
 const renderWeightInput = (n) =>{
   document.body.innerHTML += `<p>${n}</p>`;

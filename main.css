@@ -57,3 +57,19 @@ h1{
     border-radius: 4px;
 }
 
+
+.vip-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.vip-link:hover {
+    background-color: #45a049;
+}
