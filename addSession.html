@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Form</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyB3mEopVwfbyTsbgSSr6Wupknz5tMJ4a68",
+        authDomain: "salem-throws.firebaseapp.com",
+        projectId: "salem-throws",
+        storageBucket: "salem-throws.appspot.com",
+        messagingSenderId: "526456176126",
+        appId: "1:526456176126:web:fbd3f6c7db0f20472914af",
+        measurementId: "G-9TRKSE5X2R"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+
+  </head>
+  <body>
+    <form id="exerciseForm">
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date"><br><br>
+
+      <div id="exerciseRows"></div>
+
+      <button type="button" onclick="addExerciseRow()">Add Exercise</button><br><br>
+
+      <label for="notes">Notes:</label>
+      <textarea id="notes" name="notes"></textarea><br><br>
+
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
