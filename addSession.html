@@ -8,6 +8,7 @@
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
     <script>
       // Your web app's Firebase configuration
       var firebaseConfig = {
@@ -31,6 +32,9 @@
       <label for="date">Date:</label>
       <input type="date" id="date" name="date"><br><br>
 
+      <div id="dropArea" style="border: 2px dashed #ccc; padding: 10px; text-align: center; margin: 10px;">
+        Drop your spreadsheet here
+      </div>
       <div id="exerciseRows"></div>
 
       <button type="button" onclick="addExerciseRow()">Add Exercise</button><br><br>

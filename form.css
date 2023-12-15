@@ -83,4 +83,14 @@ input[type="submit"]:hover {
     border-top: 1px solid #eee;
     padding-top: 15px;
 }
+#dropArea {
+    border: 2px dashed #ccc;
+    padding: 50px;
+    text-align: center;
+    margin: 50px;
+    cursor: pointer;
+}
 
+#dropArea:hover {
+    background-color: #f8f8f8;
+}
